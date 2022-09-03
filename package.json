@@ -1,0 +1,13 @@
+{
+  "name": "wx-push",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.7.14",
+    "@types/node-cron": "^3.0.3",
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.5",
+    "node-cron": "^3.0.2"
+  }
+}
