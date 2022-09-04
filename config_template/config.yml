@@ -1,0 +1,33 @@
+# 启动时读取，修改需要手动重启
+wx:
+  appid: '微信公众号appid'
+  secret: 'appsecret'
+day:
+  # 08:30 = 30 8 * * *
+  cron: '*/10 * * * * *'
+  # 发给谁
+  users: ['omr-K5nM8a1lik1TklT2EVgx2QVc', '后台展示的用户微信号']
+  # 模板id
+  template: 'uUbfGUuNUkO0A_HilHqpV87rZoJ0GD6TvCFGi1V3w3o'
+  # 颜色 可修改 不写默认黑色
+  colors:
+    WeekDay: '#d999ff'
+    Date: '#ff9190'
+    CTime: '#8dc4ff'
+    CTeacher: '#96d475'
+    CNote: '#6d6d6d'
+    DYear: '#fa2e2e'
+    DZQ: '#d5fa2e'
+    DGQ: '#fa2e2e'
+  # 倒计时 不用该功能可以不在模板添加
+  # 模板限制600字 这里key短一点
+  daoshu:
+    - 
+      date: '2023-1-21'
+      key: 'DYear' # 过年
+    -
+      date: '2023-9-10'
+      key: 'DZQ' # ZQ 中秋
+    -
+      key: 'DGQ' # GQ 国庆
+      date: '2023-10-1'

@@ -1,0 +1,21 @@
+这东西限制600字
+必须要加 .DATA
+
+{{CName5.DATA}}{{CTime5.DATA}}{{CLoc5.DATA}}{{CTeacher5.DATA}}{{CNote5.DATA}}
+里面数字要改 从0开始 课少的话可以少写几个 省点字数
+
+倒计时那些功能不用可以不写
+
+早啊~
+今天是{{Date.DATA}} 星期{{WeekDay.DATA}}
+距离中秋还有{{DZQ.DATA}}天
+国庆还有{{DGQ.DATA}}天
+过年还有{{DYear.DATA}}天
+今天共有{{Count.DATA}}节课
+
+{{CName0.DATA}}{{CTime0.DATA}}{{CLoc0.DATA}}{{CTeacher0.DATA}}{{CNote0.DATA}}
+{{CName1.DATA}}{{CTime1.DATA}}{{CLoc1.DATA}}{{CTeacher1.DATA}}{{CNote1.DATA}}
+{{CName2.DATA}}{{CTime2.DATA}}{{CLoc2.DATA}}{{CTeacher2.DATA}}{{CNote2.DATA}}
+{{CName3.DATA}}{{CTime3.DATA}}{{CLoc3.DATA}}{{CTeacher3.DATA}}{{CNote3.DATA}}
+{{CName4.DATA}}{{CTime4.DATA}}{{CLoc4.DATA}}{{CTeacher4.DATA}}{{CNote4.DATA}}
+{{CName5.DATA}}{{CTime5.DATA}}{{CLoc5.DATA}}{{CTeacher5.DATA}}{{CNote5.DATA}}
