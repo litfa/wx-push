@@ -29,6 +29,32 @@ schedule(config.day.cron, () => {
         value: `${day()}-${day(e['length'] || 45)}`,
         color: color('CTime')
       }
+
+      data[`CLocation${i}`] = {
+        value: e.location,
+        color: color('CLocation')
+      }
+
+      data[`CTeacher${i}`] = {
+        value: e.teacher,
+        color: color('CTeacher')
+      }
+
+      data[`CNote${i}`] = {
+        value: e.note,
+        color: color('CNote')
+      }
+    })
+    return data
+  }
+  // 倒数计时
+  const getDaoShuData = () => {
+    const data: any = {}
+    config.day.daoshu.forEach(e => {
+      data[e.key] = {
+        value: dayjs(e.date).diff(dayjs(), 'day'),
+        color: color(e.key)
+      }
     })
     return data
   }
@@ -40,14 +66,15 @@ schedule(config.day.cron, () => {
         color: color('WeekDay')
       },
       Date: {
-        value: date('YYYY年MM月DD日'),
+        value: date('YYYY年M月D日'),
         color: color('Date')
       },
       Count: {
         value: todayClass.length,
         color: color('Count')
       },
-      ...getClassData()
+      ...getClassData(),
+      ...getDaoShuData()
     })
   })
 })

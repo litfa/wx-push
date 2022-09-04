@@ -12,6 +12,7 @@ export default async (openId: string, templateId: string, topcolor: string, data
       access_token: accessToken
     },
     data: {
+      url: 'https://www.alongw.cn',
       touser: openId,
       template_id: templateId,
       topcolor: topcolor || '#FF0000',

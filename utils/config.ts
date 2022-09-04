@@ -10,11 +10,32 @@ export default {
     // 8点
     cron: '*/10 * * * * *',
     users: ['omr-K5nM8a1lik1TklT2EVgx2QVc'],
-    template: 'uQwTAYQwgGsJCwWgX2FHRVEGwCFmQzVZAlmBkPOWCK8',
+    template: 'uUbfGUuNUkO0A_HilHqpV87rZoJ0GD6TvCFGi1V3w3o',
     colors: {
-      WeekDay: '#18abc5',
+      WeekDay: '#d999ff',
+      Date: '#ff9190',
+      CTime: '#8dc4ff',
+      CTeacher: '#96d475',
+      CNote: '#6d6d6d',
 
-    }
+      DYear: '#fa2e2e',
+      DZhongQiu: '#d5fa2e',
+      DGuoQing: '#fa2e2e',
+    },
+    daoshu: [
+      {
+        date: '2023-1-21',
+        key: 'DYear'
+      },
+      {
+        key: 'DZQ',
+        date: '2023-9-10'
+      },
+      {
+        key: 'DGQ',
+        date: '2023-10-1'
+      },
+    ]
   }
 }
 
