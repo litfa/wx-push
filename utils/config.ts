@@ -1,4 +1,4 @@
-import KeChrngBiao from '../types/KeChrngBiao'
+import KeChrngBiao from '../types/KeChengBiao'
 import type { Config } from '../types/Config'
 import { readFileSync } from 'fs'
 import { parse } from 'yaml'

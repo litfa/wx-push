@@ -2,7 +2,7 @@ import { schedule } from 'node-cron'
 import config, { keChengBiao } from '../utils/config'
 import sendUniformMessage from '../wx/sendUniformMessage'
 import { getWeek, date } from '../utils/date'
-import type KeChrngBiao from '../types/KeChrngBiao'
+import type KeChrngBiao from '../types/KeChengBiao'
 import dayjs from 'dayjs'
 
 const colors = config.day.colors as any
