@@ -2,7 +2,7 @@ import { schedule } from 'node-cron'
 import config, { keChengBiao } from '../utils/config'
 import sendUniformMessage from '../wx/sendUniformMessage'
 import { getWeek, date } from '../utils/date'
-import type KeChrngBiao from '../types/KeChengBiao'
+import type KeChengBiao from '../types/KeChengBiao'
 import dayjs from 'dayjs'
 
 const colors = config.day.colors as any
@@ -13,7 +13,7 @@ const color = (val: string) => {
 
 schedule(config.day.cron, () => {
   // 今天的课程
-  const todayClass = keChengBiao()[new Date().getDay()] as KeChrngBiao[] || []
+  const todayClass = keChengBiao()[new Date().getDay()] as KeChengBiao[] || []
 
   // 课程的数据
   const getClassData = () => {
